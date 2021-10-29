@@ -29,7 +29,6 @@ const Home: NextPage = () => {
     // Submit the form here
     grecaptcha.enterprise.ready(() => {
         grecaptcha.enterprise.execute('6Lc6FvYcAAAAAAI4wmsKE240Ygtkk0XjYiSRAR3p', {action: 'login'}).then((token: any) => {
-          console.log(event);
           emailjs.send('service_1lw7gcp', 'template_ud8u6vk', {
             from_name: event.target.elements.fromName.value,
             reply_to: event.target.elements.replyTo.value,
