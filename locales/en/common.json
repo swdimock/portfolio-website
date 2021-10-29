@@ -1,0 +1,52 @@
+{
+    "head": {
+        "title": "D. | Stephen Dimock Portfolio",
+        "description": ""
+    },
+    "main": {
+        "intro": {
+            "heading": "Please allow me to introduce myself",
+            "article": "<p>I'm Stephen Dimock, an avid technology enthusiast with a love for code, web-based applications, and serverless infrastructure.  I've been employed as a Chief Technology officer for the better part of the last decade and have been able to focus my efforts on building awesome new technology alongside talented, enthusiatic people.</p>"
+        },
+        "relations": {
+            "heading": "I have worked with",
+            "article": "<p>I have had the opportunity to work with many remarkable brands.  My teams and I have developed data integration bridges, analytic tracking layers, and PII normalization systems with these and other brands within the automotive and financial space.</p>"
+        },
+        "experience": {
+            "heading": "My Experience",
+            "article": "<p>While my passion has followed computer science since I was young, my career has followed a management trajectory.  My role as Chief Technology Officer has fused these disciplines tightly.  My goal is to combine employee-centric business ethics with data-driven decision making.  I have committed myself to having a well-rounded understanding of critial elements within software architecture and development.</p>",
+            "disciplines": {
+                "management": {
+                    "title": "Management",
+                    "paragraph": "With over 11 years experience in software-team management, my focus has been on developing strong technical teams which are unfraid to push the limits of our available technology and dynamically adapt to changing business requirements.  Functioning as a Product Owner since 2019 and trained as a Certified Scrum Master, I enjoy an adherance to Agile SCRUM methodologies and the efficiency benefits offered by such frameworks."
+                },
+                "development": {
+                    "title": "Development",
+                    "paragraph": "My enterprise focus is in Javascript and PHP frameworks.  On the frontend this includes (but is not limited to) Angular 2+, React (including Next.js), and a host of web component libraries.  On the backend I have extensive experience with NodeJS and Lumen focusing heavily on API development.  Additionally, I have worked with several relational database systems (MySQL, Postgres, Redshift) and NOSQL systems (SQLite, Mongo DB)."
+                },
+                "devops": {
+                    "title": "DevOps",
+                    "paragraph": "As an enthusiastic administrator of Agile, this extends to my approach to continuous integration and deployment.  I have had the opportunity to develop multi-environment deployment pipelines which run seamlessly alongside our teams' codebases.  My tools of choice include AWS CodePipeline, Vercel, BitBucket Pipelines, and Github Actions."
+                },
+                "analytics": {
+                    "title": "Analytics",
+                    "paragraph": "Analytics are the cornerstone of iteration.  I have architected data aggregation, syndication, normalization, storage, and visualization workflows using a variety of entry-level and enterprise tools.  These tools include Segment, DBT, Mode Analytics, Google Analytics, and custom Analytics.js integration."
+                }
+            }
+        },
+        "examples": {
+            "heading": "Examples",
+            "article": "<p>I have worked with several technology-oriented companies as a key executive team member.  Despite the participating with the management team I have also actively participated in development and DevOps on all projects.</p>"
+        },
+        "contact": {
+            "heading": "Let's Talk",
+            "article": "<p>I am currently not available for hire, but if you are interested in reaching out regarding domain ownership or anything else that you think I may be able to help with, please let me know!</p>"
+        }
+    },
+    "form": {
+        "name": "What is your name?",
+        "email": "What is your email address?",
+        "message": "What is your quest?",
+        "send": "Send It."
+    }
+}

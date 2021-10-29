@@ -1,0 +1,195 @@
+@import 'reset'
+    
+@font-face
+    font-family: 'Codec Pro'
+    src: url('fonts/CodecPro-Regular.woff2') format('woff2'), url('fonts/CodecPro-Regular.woff') format('woff'), url('fonts/CodecPro-Regular.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+
+@font-face
+    font-family: 'Codec Pro'
+    src: url('fonts/CodecPro-Italic.woff2') format('woff2'), url('fonts/CodecPro-Italic.woff') format('woff'), url('fonts/CodecPro-Italic.ttf') format('truetype')
+    font-weight: normal
+    font-style: italic
+    font-display: swap
+
+@font-face
+    font-family: 'Proxima Nova'
+    src: url('fonts/ProximaNova-Bold.woff2') format('woff2'), url('fonts/ProximaNova-Bold.woff') format('woff'), url('fonts/ProximaNova-Bold.ttf') format('truetype')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+    
+html, body
+    background: black
+    color: white
+    font-family: 'Codec Pro', sans-serif
+
+h1, h2, h3, h4, h5, h6
+    font-family: 'Proxima Nova', sans-serif
+    margin-bottom: 0.55em
+
+h1, h2, h3
+    text-shadow: -3px 0 #FF0000, 3px 0 #00DBDB
+
+h1, h2
+    font-size: 60px
+
+h3
+    font-size: 45px
+
+h4
+    font-size: 30px
+
+p
+    line-height: 1.85
+    font-size: 18px
+    
+    &:not(:last-child)
+        margin-bottom: 2em
+
+i
+    display: block
+    height: 24px
+    width: 24px
+
+img
+  max-width: 100%
+
+.hidden
+  display: none
+
+.grid
+    display: grid
+
+.three-dee
+    display: inline-block
+    transform-style: preserve-3d
+  
+    &.shape
+      box-shadow: -3px 0 #FF0000, 3px 0 #00DBDB
+      transition: box-shadow ease 150ms
+
+    &.hover:hover
+      box-shadow: -5px 0 #FF0000, 5px 0 #00DBDB
+
+#three
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0
+
+// Forms
+form
+  margin: 4em 0
+
+  .form-field
+    margin-bottom: 1em
+
+    input, textarea
+      color: inherit
+      line-height: 1
+      padding: 1em
+      border: none
+      background: none
+      outline: none
+      font-family: inherit
+      font-size: 18px
+
+      &[type="text"]
+        width: 100%
+        padding-left: 0
+        padding-right: 0
+        border-bottom: 1px solid white
+
+      &[type="submit"], &[type="button"]
+        border: 1px solid white
+        padding-left: 3em
+        padding-right: 3em
+        margin: 1em 0
+
+    textarea
+      width: 100%
+      padding-left: 0
+      padding-right: 0
+      border-bottom: 1px solid white
+      resize: none
+
+// Carousel
+.embla
+  position: relative
+  margin-left: auto
+  margin-right: auto
+
+.embla__viewport
+  overflow: hidden
+  width: 100%
+
+.embla__viewport.is-draggable
+  cursor: move
+  cursor: grab
+
+.embla__viewport.is-dragging
+  cursor: grabbing
+
+.embla__container
+  display: flex
+  user-select: none
+  -webkit-touch-callout: none
+  -khtml-user-select: none
+  -webkit-tap-highlight-color: transparent
+  margin-left: -10px
+
+.embla__slide
+  position: relative
+  min-width: 50%
+  padding-left: 10px
+
+.embla__slide__inner
+  position: relative
+  overflow: hidden
+  height: 600px
+
+  @media only screen and (max-width: 600px)
+    max-height: 50vh
+
+  // &:hover > blockquote
+  //   height: 100%
+
+.embla__slide__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+    + blockquote
+      display: flex
+      align-content: center
+      flex-direction: column
+      justify-content: flex-start
+      position: absolute
+      bottom: 0
+      padding: 2em 20px
+      width: 100%
+      height: 100%
+      background: rgb(0 0 0 / 35%)
+      transition: height ease 300ms
+
+      span
+        display: block
+        font-size: 0.5em
+        font-weight: normal
+
+.embla__button:disabled
+  cursor: default
+  opacity: 0.3
+
+.embla__button__svg
+  width: 100%
+  height: 100%
+
+// recaptcha
+.grecaptcha-badge
+  visibility: hidden

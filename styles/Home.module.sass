@@ -1,0 +1,213 @@
+.container
+    position: absolute
+    width: 100%
+
+.header
+    position: absolute
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 1em
+    z-index: 2
+
+    .social
+        display: flex
+        gap: 10px
+
+        i
+            transition: transform ease 250ms
+
+            &:hover
+                transform: scale(1.25)
+
+        .github
+            background: url(../public/github.svg)
+
+        .linkedin
+            background: url(../public/linkedin.svg)
+
+.main
+    padding: 0 1em
+
+    > section:not(.leader)
+        max-width: 920px
+        margin: 20vh auto
+
+        @media only screen and (max-width: 600px)
+            padding: 6.9vh 0
+
+    .leader
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+
+        img
+            width: 460px
+
+    .columns
+        display: flex
+        justify-content: space-between
+
+        > *
+            width: 50%
+
+        @media only screen and (max-width: 600px)
+            flex-direction: column
+
+            > *
+                width: 100%
+
+    .introduction > article
+        width: 40%
+        margin-left: 10%
+
+    .relations
+
+        article
+            padding-bottom: 2em
+
+        .grid
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            grid-gap: 2em
+            align-items: center
+            justify-items: center
+
+            img
+                max-width: 150px
+                max-height: 60px
+
+            @media only screen and (max-width: 600px)
+                grid-template-columns: 1fr
+
+        @media only screen and (max-width: 600px)
+            text-align: center
+
+    .experience
+
+        h2 + article
+            margin-bottom: 2em
+
+        article
+            padding-bottom: 2em
+
+        ul
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 15vh
+
+            &:hover li.visible
+
+                h4
+                    opacity: 1
+
+                p
+                    visibility: hidden
+                    opacity: 0
+
+            li
+                position: relative
+                width: 100%
+                cursor: help
+
+                > *
+                    transition: all ease 300ms
+
+                &.visible
+
+                    h4
+                        opacity: 0.35
+
+                    p
+                        visibility: visible
+                        opacity: 1
+
+                &:hover
+
+                    h4
+                        opacity: 0.35 !important
+
+                    p
+                        visibility: visible !important
+                        opacity: 1 !important
+                
+                h4
+                    font-weight: bold
+                    font-size: 3em
+                    margin-bottom: 0
+
+                p
+                    position: absolute
+                    width: 65%
+                    left: 35%
+                    top: 50%
+                    transform: translateY(-50%)
+                    z-index: 1
+                    visibility: hidden
+                    opacity: 0
+        
+        .grid
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 3em
+
+            > article
+
+                h4
+                    text-transform: uppercase
+
+            @media only screen and (max-width: 600px)
+                grid-template-columns: 1fr
+
+    .examples
+        
+        article
+            padding-bottom: 2em
+
+        // .carousel
+
+    .contact
+
+        > article
+            display: flex
+            justify-content: space-between
+            gap: 1em
+
+            > *
+                flex: 1
+
+                &:last-child
+                    display: flex
+                    justify-content: flex-end
+
+            @media only screen and (max-width: 600px)
+                flex-direction: column-reverse
+
+        form + p
+            margin-top: 2em
+            font-weight: bold
+
+        .portrait
+            display: block
+            width: 400px
+            height: 400px
+            margin-bottom: 1em
+            background: white
+            border-radius: 50%
+            background: url(../public/portrait-serious-guy.png) no-repeat center
+            background-size: cover
+
+            &:hover
+                background-image: url(../public/portrait-happy-guy.png)
+
+            @media only screen and (max-width: 600px)
+                max-width: 70vw
+                max-height: 70vw
+                margin: 1em auto
+
+.footer
+    display: flex
+    justify-content: center
+    padding: 5em 0 1em
