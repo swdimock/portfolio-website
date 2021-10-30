@@ -58,9 +58,15 @@
             > *
                 width: 100%
 
-    .introduction > article
-        width: 40%
-        margin-left: 10%
+    .introduction 
+        
+        > article
+            width: 40%
+            margin-left: 10%
+
+            @media only screen and (max-width: 600px)
+                width: 100%
+                margin-left: 0
 
     .relations
 
@@ -107,6 +113,10 @@
                     visibility: hidden
                     opacity: 0
 
+                    @media only screen and (max-width: 600px)
+                        visibility: visible
+                        opacity: 1
+
             li
                 position: relative
                 width: 100%
@@ -120,6 +130,9 @@
                     h4
                         opacity: 0.35
 
+                        @media only screen and (max-width: 600px)
+                            opacity: 1
+
                     p
                         visibility: visible
                         opacity: 1
@@ -128,6 +141,9 @@
 
                     h4
                         opacity: 0.35 !important
+
+                        @media only screen and (max-width: 600px)
+                            opacity: 1 !important
 
                     p
                         visibility: visible !important
@@ -147,6 +163,16 @@
                     z-index: 1
                     visibility: hidden
                     opacity: 0
+
+                    @media only screen and (max-width: 600px)
+                        position: relative
+                        top: 0
+                        left: 0
+                        transform: none
+                        width: 100%
+                        margin-top: 1em
+                        visibility: visible
+                        opacity: 1
         
         .grid
             display: grid
@@ -169,6 +195,10 @@
         // .carousel
 
     .contact
+
+        @media only screen and (max-width: 600px)
+            h4
+                text-align: center
 
         > article
             display: flex
